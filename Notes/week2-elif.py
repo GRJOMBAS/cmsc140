@@ -1,4 +1,4 @@
-"""
+
 my_number = 7
 my_string = "CMSC 140"
 my_bool = True
@@ -88,7 +88,7 @@ elif example == 10:
     print("It's 10")
 else:
     print("Big number")
-"""
+
 print("Name Exercise")
 print("What is your name?")
 myName = "Gabriel"
@@ -119,3 +119,4 @@ elif operation == "d":
     print(num1, "divided by", num2, "is", num1/num2)
 else:
     print("That is not a valid operation")
+
