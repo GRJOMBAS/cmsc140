@@ -12,6 +12,6 @@ for num in range(startingNum, endNum):
             chain += 1
     chainList.append(chain)
     largestChain = max(chainList)
-    chainNum  = chainList.index(largestChain) + 1
+    chainNum  = chainList.index(largestChain) + startingNum
 print("Longest chain is from:", largestChain)
 print("Length of chain:", chainNum)
