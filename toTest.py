@@ -6,6 +6,9 @@ answer2 = round(y/x, 3)     #rounds the number to 3 decimal place
 print(answer)
 print(answer2)
 """
-guess = 30
-print( abs(-31) )                   #the absolute value of a number
-guess = input(str(guess) + " is too high! Try Again: ")
+#guess = 30
+#print( abs(-31) )                   #the absolute value of a number
+thisList = [1, 2]
+x = 1
+thisList.append(x)
+print(thisList)
