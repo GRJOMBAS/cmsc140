@@ -44,7 +44,7 @@ def collatz(num):
 
 collatz(num) """
 
-print("Exercise 2b")
+""" print("Exercise 2b")
 startingNum = int(input("Enter a start: "))
 endingNum = int(input("Enter a stop: ")) + 1
 
@@ -65,4 +65,4 @@ def longestCollatz(start, stop):
             largestNum = sequenceNum
     return largestNum
 
-print(longestCollatz(startingNum, endingNum))
+print(longestCollatz(startingNum, endingNum)) """
