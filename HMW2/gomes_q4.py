@@ -10,7 +10,6 @@ else:
     while guess != randomNumber:
         if guess > randomNumber:
             guess = int(input(str(guess) + " is too high! Try Again: "))
-        if guess < randomNumber:
+        else:
             guess = int(input(str(guess) + " is too low! Try Again: "))
-        if guess == randomNumber:
-            print("Congrats!", guess, "was correct! You got it right!")
+print("Congrats!", guess, "was correct! You got it right!")
