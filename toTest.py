@@ -8,7 +8,6 @@ print(answer2)
 """
 #guess = 30
 #print( abs(-31) )                   #the absolute value of a number
-thisList = [1, 2]
-x = 1
-thisList.append(x)
-print(thisList)
+for i in range(7):
+    for j in range(i):
+        print(i)

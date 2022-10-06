@@ -1,5 +1,4 @@
 import random
-
 randomNumber = int(random.random() * 100)
 print("Welcome to the random number guesser.")
 print(randomNumber) # uncomment to make it easier to check for correct guess
@@ -10,6 +9,8 @@ else:
     while guess != randomNumber:
         if guess > randomNumber:
             guess = int(input(str(guess) + " is too high! Try Again: "))
-        else:
+        elif guess < randomNumber:
             guess = int(input(str(guess) + " is too low! Try Again: "))
-print("Congrats!", guess, "was correct! You got it right!")
+        if guess == randomNumber:
+            print("Congrats!", guess, "was correct! You got it right!")
+            break
