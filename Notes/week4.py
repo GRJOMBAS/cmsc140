@@ -22,6 +22,7 @@ fridge = {
 shopping_needs = ["eggs", "fruit", "milk", "juice"]
 
 for i in shopping_needs:
+    print(i)
     if i in fridge:
         print("You already have", fridge[i], i)  #fridge[i] to call value for key i
     else:
