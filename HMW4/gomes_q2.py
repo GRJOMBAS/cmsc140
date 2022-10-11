@@ -18,9 +18,14 @@ courses = {
         "- Meets:": ["M 11:10 - 12:20", "W 11:10 - 12:20", "F 11:10 - 12:20"]
     }
 }
-
+# isinstance()
 for course, info in courses.items():
     print("Course Code:", course)
     for key, val in info.items():
-        print(key, val)
+        if isinstance(val, list):
+            print(key)
+            for time in val:
+                print("\t-",time)
+        else:
+            print(key, val)
     print("---\n")
