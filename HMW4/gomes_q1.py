@@ -9,5 +9,3 @@ def listdiff(a, b):
     return c
 
 print(listdiff(a, b))
-
-
