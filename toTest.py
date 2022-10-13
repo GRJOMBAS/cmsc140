@@ -8,6 +8,6 @@ print(answer2)
 """
 #guess = 30
 #print( abs(-31) )                   #the absolute value of a number
-for i in range(7):
-    for j in range(i):
-        print(i)
+string = "UCGUGUUUAU"
+
+string.split("")
