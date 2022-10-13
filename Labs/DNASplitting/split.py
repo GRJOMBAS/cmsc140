@@ -13,9 +13,9 @@ def generate_dna(tablenum):
     seq = "TAC" + seq[3:]
 
     # replace any premature stop codons with non-stops
-    seq = seq.replace("ATT", "CAG")
-    seq = seq.replace("ATC", "GGA")
-    seq = seq.replace("ACT", "AAA")
+    seq = seq.replace("ATT", "CGG")
+    seq = seq.replace("ATC", "GGC")
+    seq = seq.replace("ACT", "GCG")
 
     # Add in a stop codon somewhere towards the end
     stops = ["ATT", "ATC", "ACT"]
@@ -44,13 +44,12 @@ aa = {
 }
 
 DNA = generate_dna(0)
-print(DNA)
 RNA = "U".join(DNA.split("A"))
 RNA = "X".join(RNA.split("C"))
 RNA = "C".join(RNA.split("G"))
 RNA = "A".join(RNA.split("T"))
 RNA = "G".join(RNA.split("X"))
-print(RNA)
+
 
 amino_acids = []
 RNA_list = []
@@ -58,14 +57,15 @@ RNA_list = []
 for i in range(3, 301, 3):
     RNA_list.append(RNA[i-3:i])
 
-print(amino_acids)
 for i, item in enumerate(RNA_list):
     if item in aa:
         if aa[item] == "STOP":
             break
         else:
             amino_acids.append(aa[item])
+print(len(amino_acids))
 print("-".join(amino_acids))
+
 
 plt.hist(amino_acids, bins = len(set(amino_acids)), rwidth=0.8)
 plt.show()
