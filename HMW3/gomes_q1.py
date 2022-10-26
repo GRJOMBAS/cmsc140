@@ -19,4 +19,4 @@ def longestCollatz():
             largestNum = sequenceNum
     return largestNum
 
-print(longestCollatz)
+print(longestCollatz())
