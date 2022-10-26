@@ -23,7 +23,7 @@ def randomNumberGuesser():
             elif (guess < randomNumber):
                 guess = int(input(str(guess) + " is too low! Try Again ("+ str(tries)+" guesses left): "))
                 
-            elif (guess == randomNumber):
+            if (guess == randomNumber):
                 print("Congrats!", guess, "was correct! You got it right!")
                 break
             
