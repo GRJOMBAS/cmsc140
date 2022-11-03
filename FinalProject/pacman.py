@@ -30,8 +30,15 @@ pygame.display.flip()
 
 # Create a surface and pass in a tuple containing its length and width
 radius = 75
-surf = pygame.draw.circle(screen, (0, 0, 0), ((screenWidth-radius)/3, (screenHeight-radius)/3), radius)
+surf = pygame.draw.circle(screen, (0, 0, 0), ((screenWidth-radius)/4, (screenHeight-radius)/4), radius)
 pygame.display.flip()
+
+pygame.draw.polygon(
+    screen,                     # where to draw the polygon
+    [0,0,0],                        # color
+    [[screenWidth/2,screenHeight/2], [screenWidth,screenHeight], [screenWidth,0]] # x,y coordinates of vertices
+  )
+pygame.display.flip() # refresh the screen
 
 # Variable to keep the main loop running
 running = True

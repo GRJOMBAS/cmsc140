@@ -36,6 +36,15 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 # Instantiate player. Right now, this is just a rectangle.
 player = Player()
 
+# Fill the screen with black
+screen.fill((0, 0, 0))
+
+# Draw the player on the screen
+screen.blit(player.surf, player.rect)
+
+# Update the display
+pygame.display.flip()
+
 # Variable to keep the main loop running
 running = True
 
@@ -52,11 +61,3 @@ while running:
         elif event.type == QUIT:
             running = False
 
-    # Fill the screen with black
-    screen.fill((0, 0, 0))
-
-    # Draw the player on the screen
-    screen.blit(player.surf, player.rect)
-
-    # Update the display
-    pygame.display.flip()
