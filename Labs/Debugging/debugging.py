@@ -81,7 +81,7 @@ for student, avg in students.items():
         letter_grade = "C"
     elif avg >= 60: 
         letter_grade = "D"
-    elif avg < 60:
+    else:
         letter_grade = "F"
     grades[student] = letter_grade
 
